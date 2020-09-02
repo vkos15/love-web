@@ -1,0 +1,6 @@
+# Default ignored files
+/love-web.iws
+
+# Project exclude paths
+/target/
+/target/test-classes/

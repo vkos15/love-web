@@ -1,0 +1,257 @@
+[1598125984.276][INFO]: Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 24927
+[1598125984.276][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1598125985.014][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\Valentina\\love-web\\build\\downloads",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\Valentina\\love-web\\build\\downloads",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1598125985.024][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\Valentina\\love-web\\build\\downloads"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1598125985.026][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1598125985.028][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\VALENT~1\AppData\Local\Temp\scoped_dir28148_1839936395" data:,
+[1598125985.567][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598125987.578][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598125989.590][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "84.0.4147.125",
+      "chrome": {
+         "chromedriverVersion": "84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})",
+         "userDataDir": "C:\\Users\\VALENT~1\\AppData\\Local\\Temp\\scoped_dir28148_1839936395"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:51396"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "f485400ce3d3ab9446a849eb52518478"
+}
+[1598125989.630][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1598125989.630][INFO]: Waiting for pending navigations...
+[1598125989.634][INFO]: Done waiting for pending navigations. Status: ok
+[1598125989.743][INFO]: Waiting for pending navigations...
+[1598125989.744][INFO]: Done waiting for pending navigations. Status: ok
+[1598125989.744][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE SetWindowRect {
+   "height": 770,
+   "width": 1368,
+   "x": 8,
+   "y": 8
+}
+[1598125989.750][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND Navigate {
+   "url": "https://love.ru/"
+}
+[1598125989.750][INFO]: Waiting for pending navigations...
+[1598125989.751][INFO]: Done waiting for pending navigations. Status: ok
+[1598125990.144][INFO]: Waiting for pending navigations...
+[1598125991.395][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.395][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE Navigate
+[1598125991.430][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#reg_form_field_name_d input[name='name']"
+}
+[1598125991.430][INFO]: Waiting for pending navigations...
+[1598125991.431][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.440][INFO]: Waiting for pending navigations...
+[1598125991.442][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.442][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "de8078e2-4eed-43fd-b263-799eccc86a16"
+}
+[1598125991.469][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "de8078e2-4eed-43fd-b263-799eccc86a16"
+   } ],
+   "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
+}
+[1598125991.469][INFO]: Waiting for pending navigations...
+[1598125991.472][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.484][INFO]: Waiting for pending navigations...
+[1598125991.486][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.486][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE ExecuteScript true
+[1598125991.490][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND ClearElement {
+   "id": "de8078e2-4eed-43fd-b263-799eccc86a16"
+}
+[1598125991.490][INFO]: Waiting for pending navigations...
+[1598125991.491][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.513][INFO]: 
+	=== NOTE: ===
+	The Clear command in ChromeDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1598125991.524][INFO]: Waiting for pending navigations...
+[1598125991.525][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.525][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE ClearElement
+[1598125991.532][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND TypeElement {
+   "id": "de8078e2-4eed-43fd-b263-799eccc86a16",
+   "text": "898634567567",
+   "value": [ "8", "9", "8", "6", "3", "4", "5", "6", "7", "5", "6", "7" ]
+}
+[1598125991.532][INFO]: Waiting for pending navigations...
+[1598125991.533][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.597][INFO]: Waiting for pending navigations...
+[1598125991.605][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.605][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE TypeElement
+[1598125991.607][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND GetTitle {
+
+}
+[1598125991.607][INFO]: Waiting for pending navigations...
+[1598125991.608][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.610][INFO]: Waiting for pending navigations...
+[1598125991.611][INFO]: Done waiting for pending navigations. Status: ok
+[1598125991.611][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE GetTitle "Знакомства на сайте Love.ru - Найди свою любовь"
+[1598125991.615][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND Navigate {
+   "url": "http://localhost:8080/#settings/profile"
+}
+[1598125991.615][INFO]: Waiting for pending navigations...
+[1598125991.616][INFO]: Done waiting for pending navigations. Status: ok
+[1598125995.711][INFO]: Waiting for pending navigations...
+[1598125995.788][INFO]: Done waiting for pending navigations. Status: ok
+[1598125995.789][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE Navigate
+[1598126005.798][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id='form_settings_profile']//a[1]/div"
+}
+[1598126005.800][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598126009.798][WARNING]: Timed out connecting to Chrome, retrying...
+[1598126009.801][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598126017.815][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE FindElement ERROR chrome not reachable
+  (Session info: chrome=84.0.4147.125)
+[1598126018.036][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1598126018.037][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598126022.037][WARNING]: Timed out connecting to Chrome, retrying...
+[1598126022.040][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598126030.055][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE ExecuteScript ERROR chrome not reachable
+  (Session info: chrome=84.0.4147.125)
+[1598126030.065][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND Screenshot {
+
+}
+[1598126030.067][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598126034.066][WARNING]: Timed out connecting to Chrome, retrying...
+[1598126034.069][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1598126042.082][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE Screenshot ERROR chrome not reachable
+  (Session info: chrome=84.0.4147.125)
+[1598126042.100][INFO]: [f485400ce3d3ab9446a849eb52518478] COMMAND Quit {
+
+}
+[1598126042.101][INFO]: [f485400ce3d3ab9446a849eb52518478] RESPONSE Quit

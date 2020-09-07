@@ -40,7 +40,7 @@ public class LoginPage {
         $(By.xpath("//*[@type='password']/following-sibling::i")).shouldHave(text(error));
     }
 
-    public void CheckatPage(String login){
+    public void checkAtPage(String login){
         //return
         $("#mprofile_link").shouldBe(visible);
         Assert.assertTrue("в ссылке нет логина",$("#mprofile_link").attr("href").contains(login));

@@ -30,7 +30,7 @@ public void LoginCorrectTest(){
     logpage.typeLogin(login);
     logpage.TypePassword(password);
     logpage.clickLogin();
-    logpage.CheckatPage(login);
+    logpage.checkAtPage(login);
 
 }
     @Test

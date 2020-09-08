@@ -1,5 +1,7 @@
 package com.valya.app;
 
+import com.codeborne.selenide.Configuration;
+import org.junit.Before;
 import org.junit.Test;
 import sun.rmi.runtime.Log;
 
@@ -11,15 +13,24 @@ public class RegistrationVkTest {
     private RegistrationPage regPage = new RegistrationPage();
     String url="https://love.ru/";
 
+    @Before
+    public void setUp() {
+
+        regPage.Opensite(url);
+        Configuration.baseUrl=url;
+    }
+
     @Test
     public void registrationVkTestMultipleChoice(){
-        regPage.Opensite(url);
+      //  regPage.Opensite(url);
         String winHandleBefore = getWebDriver().getWindowHandle();
         vkPage.openVkAutorization();
         vkPage.autorizationVK("89125825296","ar347b7");
         getWebDriver().switchTo().window(winHandleBefore);
+        vkPage.chooseProfile("sergey862191");
+        vkPage.submit();
         LoginPage lp=new LoginPage();
-        lp.checkAtPage("");
+        lp.checkAtPage("sergey862191");
 
 
     }

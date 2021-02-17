@@ -55,5 +55,18 @@ public class LoginPage {
     }
 
 
+    public void loginSite(String site, String log, String pass) {
+       // LoginPage page = new LoginPage();
+       // page.
+                openLoginForm(site);
+       // page.
+                typeLogin(log);
+       // page.
+                TypePassword(pass);
+       // page.
+                clickLogin();
+    }
+
+
 
 }

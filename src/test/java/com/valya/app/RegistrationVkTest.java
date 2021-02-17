@@ -1,6 +1,7 @@
 package com.valya.app;
 
 import com.codeborne.selenide.Configuration;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import sun.rmi.runtime.Log;
@@ -21,7 +22,7 @@ public class RegistrationVkTest {
     }
 
     @Test
-    public void registrationVkTestMultipleChoice(){
+    public void autorizationVkTestMultipleChoice(){
       //  regPage.Opensite(url);
         String winHandleBefore = getWebDriver().getWindowHandle();
         vkPage.openVkAutorization();
@@ -31,7 +32,21 @@ public class RegistrationVkTest {
         vkPage.submit();
         LoginPage lp=new LoginPage();
         lp.checkAtPage("sergey862191");
-
+        BaseHelp help = new BaseHelp();
+        help.deactivateOAuth("sergey862191");
 
     }
+
+    @Test
+    public void registrationVkTestWithoutEmail(){
+        
+    }
+
+
+
+
+
+
+
+
 }

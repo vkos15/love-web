@@ -2,9 +2,12 @@ package com.valya.app;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+//import org.junit.Before;
+//import org.junit.Test;
 import sun.rmi.runtime.Log;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
@@ -14,7 +17,7 @@ public class RegistrationVkTest {
     private RegistrationPage regPage = new RegistrationPage();
     String url="https://love.ru/";
 
-    @Before
+    @BeforeTest
     public void setUp() {
 
         regPage.Opensite(url);

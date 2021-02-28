@@ -14,7 +14,8 @@ public class LoginTest {
 
     @Before
     public void setUp() {
-        String url="https://love.ru/";
+       // String url="https://love.ru/";
+        String url=System.getenv("URL");
         logpage = new LoginPage();
         logpage.openLoginForm(url);
         Configuration.baseUrl=url;

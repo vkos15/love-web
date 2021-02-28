@@ -13,7 +13,8 @@ public class RegistrationTest {
 
     @Before
     public void setUp() {
-        String url="https://love.ru/";
+       // String url="https://love.ru/";
+        String url=System.getenv("URL");
         regPage=new RegistrationPage();
         regPage.Opensite(url);
         Configuration.baseUrl=url;

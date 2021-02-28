@@ -12,7 +12,8 @@ public class RegistrationVkTest {
 
     private RegistrationVkPage vkPage = new RegistrationVkPage();
     private RegistrationPage regPage = new RegistrationPage();
-    String url="https://love.ru/";
+   // String url="https://love.ru/";
+    String url=System.getenv("URL");
 
     @Before
     public void setUp() {

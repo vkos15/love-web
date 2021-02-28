@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/���������/IdeaProjects/love-web">
+        <classes>
+            <class name="com.valya.app.RegistrationVkTest">
+                <methods>
+                    <include name="registrationVkTestMultipleChoice"/>
+                </methods>
+            </class>
+            <class name="com.valya.app.LoginTest">
+                <methods>
+                <include name="LoginCorrectTest"/>
+                <include name="LoginnotexistTest"/>
+                <include name="LoginisEmptyTEst"/>
+                <include name="PasswordIsWrongTest"/>
+                <include name="PasswordIsEmtyTest"/>
+            </methods>
+            </class>
+            <class name="com.valya.app.RegistrationTest">
+                <methods>
+                    <include name="regEmailAlreadyExistTest"/>
+                    <include name="regEmailIsEmptyTest"/>
+                    <include name="regEmailIsInvalidTest"/>
+                    <include name="nameIsEmptyEmailIsEmpty"/>
+                    <include name="nameIsEmpty"/>
+                    <include name="nameIsOneSymbolEmailisIncorrect"/>
+                    <include name="lengthNameIsMoreThan21"/>
+                    <include name="nameIsBad"/></methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

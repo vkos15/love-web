@@ -1,0 +1,909 @@
+Index: love-web.ipr
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CodeStyleManager\">\r\n    <option name=\"USE_DEFAULT_CODE_STYLE_SCHEME\" value=\"true\" />\r\n    <option name=\"CODE_STYLE_SCHEME\" value=\"\" />\r\n  </component>\r\n  <component name=\"CompilerConfiguration\">\r\n    <wildcardResourcePatterns>\r\n      <entry name=\"!?*.java\" />\r\n    </wildcardResourcePatterns>\r\n  </component>\r\n  <component name=\"ExportToHTMLSettings\">\r\n    <option name=\"PRINT_LINE_NUMBERS\" value=\"false\" />\r\n    <option name=\"OPEN_IN_BROWSER\" value=\"false\" />\r\n    <option name=\"OUTPUT_DIRECTORY\" />\r\n  </component>\r\n  <component name=\"ImportConfiguration\">\r\n    <option name=\"VENDOR\" />\r\n    <option name=\"RELEASE_TAG\" />\r\n    <option name=\"LOG_MESSAGE\" />\r\n    <option name=\"CHECKOUT_AFTER_IMPORT\" value=\"true\" />\r\n  </component>\r\n  <component name=\"InspectionProjectProfileManager\">\r\n    <profile version=\"1.0\">\r\n      <option name=\"myName\" value=\"Project Default\" />\r\n    </profile>\r\n    <version value=\"1.0\" />\r\n  </component>\r\n  <component name=\"JUnitProjectSettings\">\r\n    <option name=\"TEST_RUNNER\" value=\"UI\" />\r\n  </component>\r\n  <component name=\"JavadocGenerationManager\">\r\n    <option name=\"OPTION_HIERARCHY\" value=\"false\" />\r\n    <option name=\"OPTION_NAVIGATOR\" value=\"false\" />\r\n    <option name=\"OPTION_INDEX\" value=\"false\" />\r\n    <option name=\"OPTION_SEPARATE_INDEX\" value=\"false\" />\r\n    <option name=\"OPTION_DOCUMENT_TAG_DEPRECATED\" value=\"false\" />\r\n    <option name=\"OPTION_DEPRECATED_LIST\" value=\"false\" />\r\n    <option name=\"OPEN_IN_BROWSER\" value=\"false\" />\r\n  </component>\r\n  <component name=\"JikesSettings\">\r\n    <option name=\"DEBUGGING_INFO\" value=\"true\" />\r\n    <option name=\"DEPRECATION\" value=\"true\" />\r\n    <option name=\"GENERATE_NO_WARNINGS\" value=\"false\" />\r\n    <option name=\"GENERATE_MAKE_FILE_DEPENDENCIES\" value=\"false\" />\r\n    <option name=\"DO_FULL_DEPENDENCE_CHECK\" value=\"false\" />\r\n    <option name=\"IS_INCREMENTAL_MODE\" value=\"false\" />\r\n    <option name=\"IS_EMACS_ERRORS_MODE\" value=\"true\" />\r\n    <option name=\"ADDITIONAL_OPTIONS_STRING\" value=\"\" />\r\n    <option name=\"MAXIMUM_HEAP_SIZE\" value=\"128\" />\r\n  </component>\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module filepath=\"$PROJECT_DIR$/love-web.iml\" />\r\n    </modules>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"1.8\" />\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- love-web.ipr	(revision 01e84e9dcaaec8914ce13333677814181221c3f5)
++++ love-web.ipr	(date 1599229913006)
+@@ -8,6 +8,17 @@
+     <wildcardResourcePatterns>
+       <entry name="!?*.java" />
+     </wildcardResourcePatterns>
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="love-web" />
++      </profile>
++    </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="love-web" target="1.7" />
++    </bytecodeTargetLevel>
+   </component>
+   <component name="ExportToHTMLSettings">
+     <option name="PRINT_LINE_NUMBERS" value="false" />
+@@ -48,14 +59,403 @@
+     <option name="IS_EMACS_ERRORS_MODE" value="true" />
+     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+     <option name="MAXIMUM_HEAP_SIZE" value="128" />
++  </component>
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
+   </component>
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module filepath="$PROJECT_DIR$/love-web.iml" />
++      <module fileurl="file://$PROJECT_DIR$/love-web.iml" filepath="$PROJECT_DIR$/love-web.iml" />
+     </modules>
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
+   <component name="VcsDirectoryMappings">
+     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
++  <component name="libraryTable">
++    <library name="Maven: com.codeborne:selenide:5.13.0">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/codeborne/selenide/5.13.0/selenide-5.13.0.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/codeborne/selenide/5.13.0/selenide-5.13.0-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/codeborne/selenide/5.13.0/selenide-5.13.0-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.google.code.findbugs:jsr305:1.3.9">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.google.code.gson:gson:2.8.6">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.google.errorprone:error_prone_annotations:2.1.3">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.google.guava:guava:25.0-jre">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.google.j2objc:j2objc-annotations:1.1">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.squareup.okhttp3:okhttp:3.11.0">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: com.squareup.okio:okio:1.14.0">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio/1.14.0/okio-1.14.0-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio/1.14.0/okio-1.14.0-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: commons-codec:commons-codec:1.13">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.13/commons-codec-1.13.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.13/commons-codec-1.13-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.13/commons-codec-1.13-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: commons-io:commons-io:2.6">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: io.github.bonigarcia:webdrivermanager:4.0.0">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: junit:junit:4.11">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.apache.commons:commons-compress:1.18">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.18/commons-compress-1.18-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.18/commons-compress-1.18-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.apache.commons:commons-exec:1.3">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.apache.commons:commons-lang3:3.10">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.apache.httpcomponents.client5:httpclient5:5.0.1">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.apache.httpcomponents.core5:httpcore5:5.0.1">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.checkerframework:checker-compat-qual:2.0.0">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.hamcrest:hamcrest-core:1.3">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.jsoup:jsoup:1.13.1">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.13.1/jsoup-1.13.1-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.13.1/jsoup-1.13.1-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.rauschig:jarchivelib:1.0.0">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-api:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-edge-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-ie-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-java:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-opera-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-remote-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-safari-driver:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/" />
++      </SOURCES>
++    </library>
++    <library name="Maven: org.slf4j:slf4j-api:1.7.30">
++      <CLASSES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/" />
++      </CLASSES>
++      <JAVADOC>
++        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-javadoc.jar!/" />
++      </JAVADOC>
++      <SOURCES>
++        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar!/" />
++      </SOURCES>
++    </library>
++  </component>
+ </project>
+\ No newline at end of file
+Index: love-web.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!--\r\nLicensed to the Apache Software Foundation (ASF) under one\r\nor more contributor license agreements.  See the NOTICE file\r\ndistributed with this work for additional information\r\nregarding copyright ownership.  The ASF licenses this file\r\nto you under the Apache License, Version 2.0 (the\r\n\"License\"); you may not use this file except in compliance\r\nwith the License.  You may obtain a copy of the License at\r\n\r\n  http://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing,\r\nsoftware distributed under the License is distributed on an\r\n\"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\r\nKIND, either express or implied.  See the License for the\r\nspecific language governing permissions and limitations\r\nunder the License.\r\n-->\r\n<module version=\"4\" relativePaths=\"false\" type=\"JAVA_MODULE\"> \r\n  <component name=\"NewModuleRootManager\"> \r\n    <exclude-output/>  \r\n    <orderEntry type=\"inheritedJdk\"/>  \r\n    <!-- output url=\"file://$$MODULE_DIR$$/${maven.build.dest}\"/ -->  \r\n    <!-- output-test url=\"file://$$MODULE_DIR$$/${maven.test.dest}\"/ -->  \r\n    <content url=\"file://$MODULE_DIR$\"> \r\n      <!-- sourceFolder url=\"file://$$MODULE_DIR$$/${pom.build.sourceDirectory}\" isTestSource=\"false\"/ -->  \r\n      <!-- sourceFolder url=\"file://$$MODULE_DIR$$/${pom.build.testSourceDirectory}\" isTestSource=\"true\"/ -->  \r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\"/>\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/test/java\" isTestSource=\"true\"/>\r\n      <excludeFolder url=\"file://$MODULE_DIR$/target\"/>\r\n    </content>  \r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\"/>  \r\n    <!-- Next include each dependency:\r\n      <orderEntry type=\"module\" module-name=\"${dep.artifactId}\"/>\r\n      <orderEntry type=\"module-library\">\r\n        <library name=\"${dep.artifactId}\">\r\n          <CLASSES>\r\n            <root url=\"jar://${lib.path}!/\"/>\r\n          </CLASSES>\r\n          <JAVADOC/>\r\n          <SOURCES/>\r\n        </library>\r\n      </orderEntry>\r\n     -->  \r\n    <output url=\"file://$MODULE_DIR$/target/classes\"/>  \r\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\"/>  \r\n    <orderEntry type=\"module-library\"> \r\n      <library> \r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/junit/junit/4.11/junit-4.11.jar!/\"/>\r\n        </CLASSES>\r\n      </library> \r\n    </orderEntry>  \r\n    <orderEntry type=\"module-library\"> \r\n      <library> \r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/\"/>\r\n        </CLASSES>\r\n      </library> \r\n    </orderEntry>  \r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/codeborne/selenide/5.13.0/selenide-5.13.0.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n    <orderEntry type=\"module-library\">\r\n      <library>\r\n        <CLASSES>\r\n          <root url=\"jar://C:/Users/Valentina/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar!/\"/>\r\n        </CLASSES>\r\n      </library>\r\n    </orderEntry>\r\n  </component>  \r\n  <component name=\"ModuleRootManager\"/>  \r\n  <!-- If it's a war project:\r\n  <component name=\"WebModuleProperties\">\r\n    <containerElement type=\"module\" name=\"${dep.artifactId}\">\r\n      <attribute name=\"method\" value=\"1\" />\r\n      <attribute name=\"URI\" value=\"/WEB-INF/classes\" />\r\n    </containerElement>\r\n    <containerElement type=\"library\" level=\"module\" name=\"${dep.artifactId}\">\r\n      <attribute name=\"method\" value=\"1\" />\r\n      <attribute name=\"URI\" value=\"/WEB-INF/lib/${dep.systemPath.name}\" />\r\n    </containerElement>\r\n    <deploymentDescriptor name=\"web.xml\" url=\"file://$MODULE_DIR$/${pom.build.warSourceDirectory}/WEB-INF/web.xml\" version=\"\" />\r\n    <webroots>\r\n      <root url=\"file://$MODULE_DIR$/${pom.build.warSourceDirectory}\" relative=\"/\" />\r\n    </webroots>\r\n  </component>\r\n  --> \r\n</module>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- love-web.iml	(revision 01e84e9dcaaec8914ce13333677814181221c3f5)
++++ love-web.iml	(date 1599229912807)
+@@ -1,298 +1,344 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-
+-<!--
+-Licensed to the Apache Software Foundation (ASF) under one
+-or more contributor license agreements.  See the NOTICE file
+-distributed with this work for additional information
+-regarding copyright ownership.  The ASF licenses this file
+-to you under the Apache License, Version 2.0 (the
+-"License"); you may not use this file except in compliance
+-with the License.  You may obtain a copy of the License at
+-
+-  http://www.apache.org/licenses/LICENSE-2.0
+-
+-Unless required by applicable law or agreed to in writing,
+-software distributed under the License is distributed on an
+-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+-KIND, either express or implied.  See the License for the
+-specific language governing permissions and limitations
+-under the License.
+--->
+-<module version="4" relativePaths="false" type="JAVA_MODULE"> 
+-  <component name="NewModuleRootManager"> 
+-    <exclude-output/>  
+-    <orderEntry type="inheritedJdk"/>  
+-    <!-- output url="file://$$MODULE_DIR$$/${maven.build.dest}"/ -->  
+-    <!-- output-test url="file://$$MODULE_DIR$$/${maven.test.dest}"/ -->  
+-    <content url="file://$MODULE_DIR$"> 
+-      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.sourceDirectory}" isTestSource="false"/ -->  
+-      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.testSourceDirectory}" isTestSource="true"/ -->  
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true"/>
+-      <excludeFolder url="file://$MODULE_DIR$/target"/>
+-    </content>  
+-    <orderEntry type="sourceFolder" forTests="false"/>  
+-    <!-- Next include each dependency:
+-      <orderEntry type="module" module-name="${dep.artifactId}"/>
+-      <orderEntry type="module-library">
+-        <library name="${dep.artifactId}">
+-          <CLASSES>
+-            <root url="jar://${lib.path}!/"/>
+-          </CLASSES>
+-          <JAVADOC/>
+-          <SOURCES/>
+-        </library>
+-      </orderEntry>
+-     -->  
+-    <output url="file://$MODULE_DIR$/target/classes"/>  
+-    <output-test url="file://$MODULE_DIR$/target/test-classes"/>  
+-    <orderEntry type="module-library"> 
+-      <library> 
++<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" relativePaths="false" type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
++    <output url="file://$MODULE_DIR$/target/classes" />
++    <output-test url="file://$MODULE_DIR$/target/test-classes" />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
++      <excludeFolder url="file://$MODULE_DIR$/target" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module-library">
++      <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/junit/junit/4.11/junit-4.11.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/junit/junit/4.11/junit-4.11.jar!/" />
+         </CLASSES>
+-      </library> 
+-    </orderEntry>  
+-    <orderEntry type="module-library"> 
+-      <library> 
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
++    <orderEntry type="module-library">
++      <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+         </CLASSES>
+-      </library> 
+-    </orderEntry>  
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/codeborne/selenide/5.13.0/selenide-5.13.0.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/codeborne/selenide/5.13.0/selenide-5.13.0.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+     <orderEntry type="module-library">
+       <library>
+         <CLASSES>
+-          <root url="jar://C:/Users/Valentina/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar!/"/>
++          <root url="jar://C:/Users/Valentina/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar!/" />
+         </CLASSES>
++        <JAVADOC />
++        <SOURCES />
+       </library>
+     </orderEntry>
+-  </component>  
+-  <component name="ModuleRootManager"/>  
+-  <!-- If it's a war project:
+-  <component name="WebModuleProperties">
+-    <containerElement type="module" name="${dep.artifactId}">
+-      <attribute name="method" value="1" />
+-      <attribute name="URI" value="/WEB-INF/classes" />
+-    </containerElement>
+-    <containerElement type="library" level="module" name="${dep.artifactId}">
+-      <attribute name="method" value="1" />
+-      <attribute name="URI" value="/WEB-INF/lib/${dep.systemPath.name}" />
+-    </containerElement>
+-    <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}/WEB-INF/web.xml" version="" />
+-    <webroots>
+-      <root url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}" relative="/" />
+-    </webroots>
++    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.codeborne:selenide:5.13.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-java:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-api:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-opera-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-exec:1.3" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:25.0-jre" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.checkerframework:checker-compat-qual:2.0.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.google.errorprone:error_prone_annotations:2.1.3" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.squareup.okhttp3:okhttp:3.11.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.squareup.okio:okio:1.14.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: io.github.bonigarcia:webdrivermanager:4.0.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: commons-io:commons-io:2.6" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-lang3:3.10" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.rauschig:jarchivelib:1.0.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.jsoup:jsoup:1.13.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents.client5:httpclient5:5.0.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents.core5:httpcore5:5.0.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.13" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
+   </component>
+-  --> 
+-</module>
++</module>
+\ No newline at end of file
+Index: src/test/java/com/valya/app/ProfileUpPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/valya/app/ProfileUpPage.java	(date 1599471142197)
++++ src/test/java/com/valya/app/ProfileUpPage.java	(date 1599471142197)
+@@ -0,0 +1,6 @@
++package com.valya.app;
++
++public class ProfileUpPage {
++
++
++}

@@ -1,9 +1,11 @@
 package com.valya.app;
 
 import com.codeborne.selenide.Configuration;
-import org.junit.Test;
-import org.junit.Before;
-
+//import org.junit.Test;
+//import org.junit.Before;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -11,10 +13,11 @@ public class RegistrationTest {
 
    private RegistrationPage regPage;
 
-    @Before
+    @BeforeTest
     public void setUp() {
-       // String url="https://love.ru/";
+
         String url=System.getenv("URL");
+        if (url==null)  { url= "https://love.ru" ;}
         regPage=new RegistrationPage();
         regPage.Opensite(url);
         Configuration.baseUrl=url;
@@ -87,7 +90,7 @@ public class RegistrationTest {
     public void nameIsBad(){
         //укажем недопустимое имя, например номер телефона
         regPage.enterName("898634567567");
-       regPage.enterEmail("ih35fh2@ml.rootkid.ru");
+       regPage.enterEmail("ih325fh2@ml.rootkid.ru");
         regPage.clickSignUP();
         sleep(10000);
        // open("#settings/profile");

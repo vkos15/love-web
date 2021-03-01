@@ -3,9 +3,9 @@ package com.valya.app;
 import com.codeborne.selenide.Configuration;
 //import org.junit.Test;
 //import org.junit.Before;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-import org.testng.annotations.AfterTest;
+import com.codeborne.selenide.Selenide;
+import org.testng.annotations.*;
+
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -13,7 +13,7 @@ public class RegistrationTest {
 
    private RegistrationPage regPage;
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp() {
 
         String url=System.getenv("URL");
@@ -101,6 +101,9 @@ public class RegistrationTest {
         setPage.checkName("Лучшее имя на свете");
 
     }
-
+ @AfterMethod
+    public void closeDriver(){
+     Selenide.closeWebDriver();
+ }
 
 }
